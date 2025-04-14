@@ -1,0 +1,8 @@
+train_transforms = transforms.Compose([
+    transforms.Grayscale(num_output_channels=3),     # Convert 1-channel grayscale to 3-channel
+    transforms.Resize((224, 224)),                    # Resize to ViT expected input size
+    transforms.RandomHorizontalFlip(),                # Data augmentation
+    transforms.RandomRotation(10),                    # Slight rotation
+    transforms.ToTensor(),                            # Convert to tensor
+    transforms.Normalize([0.5]*3, [0.5]*3)             # Normalize to [-1, 1]
+])
