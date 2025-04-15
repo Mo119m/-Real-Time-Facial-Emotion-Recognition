@@ -1,2 +1,3 @@
 test/
 train/
+finetuned_vit.pt/
