@@ -203,7 +203,7 @@ def save_augmented_dataset(dataloader, output_dir="./augmented_dataset"):
 
 # Modified main section
 if __name__ == "__main__":
-    dataset, dataloader = create_data_pipeline("/Users/aj/Desktop/STAT453/Project/data", batch_size=8)
+    dataset, dataloader = create_data_pipeline("/Users/mo/Desktop/statistics/sta453/project/-Real-Time-Facial-Emotion-Recognition", batch_size=8)
     
     if dataloader is not None:
         visualize_augmentations(dataloader, num_images=5, save_dir="./samples")
